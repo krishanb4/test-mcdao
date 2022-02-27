@@ -96,7 +96,7 @@ const Home: React.FC = () => {
         <Heading as="h1" scale="xl" mb="24px" color="secondary">
           {t('McDao Finance')}
         </Heading>
-        {/* <Text>{t('McDao Finance')}</Text> */}
+        <Text>{t('A Professional Meme Currency with DeFi Yield Farming, Staking, and Compounding Yield Optimizer')}</Text>
       </Hero>
       <div>
         <Cards>
