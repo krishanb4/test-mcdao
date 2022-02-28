@@ -39,7 +39,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   {
     label: t('Staking'),
     icon: 'PoolIcon',
-    href: '/pools',
+    href: '#',
     status: 
       {
         text: 'COMING SOON',
@@ -119,10 +119,10 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         label: t('Contact'),
         href: 'https://docs.pancakeswap.finance/contact-us',
       },
-      {
-        label: t('Voting'),
-        href: 'https://voting.pancakeswap.finance',
-      },
+      // {
+      //   label: t('Voting'),
+      //   href: 'https://voting.pancakeswap.finance',
+      // },
       {
         label: t('Github'),
         href: 'https://github.com/pancakeswap',
@@ -131,14 +131,14 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         label: t('Docs'),
         href: 'https://docs.pancakeswap.finance',
       },
-      {
-        label: t('Blog'),
-        href: 'https://pancakeswap.medium.com',
-      },
-      {
-        label: t('Merch'),
-        href: 'https://pancakeswap.creator-spring.com/',
-      },
+      // {
+      //   label: t('Blog'),
+      //   href: 'https://pancakeswap.medium.com',
+      // },
+      // {
+      //   label: t('Merch'),
+      //   href: 'https://pancakeswap.creator-spring.com/',
+      // },
     ],
   },
 ]

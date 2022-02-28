@@ -15,7 +15,7 @@ export interface CardValueProps {
 const CardValue: React.FC<CardValueProps> = ({
   value,
   decimals,
-  fontSize = '40px',
+  fontSize = '24px',
   lineHeight = '1',
   prefix = '',
   bold = true,

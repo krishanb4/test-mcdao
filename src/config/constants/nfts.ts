@@ -3,7 +3,7 @@ import { Nft, NftSource, NftType } from './types'
 export const IPFS_GATEWAY = 'https://gateway.pinata.cloud'
 
 export const nftSources: NftSource = {
-  [NftType.PANCAKE]: {
+  [NftType.PANMCDAO]: {
     address: {
       56: '0xDf7952B35f24aCF7fC0487D01c8d5690a60DBa07',
       97: '0x60935F36e4631F73f0f407e68642144e07aC7f5E',
@@ -77,7 +77,7 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'easter-champion-storm',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 15,
   },
   {
@@ -91,7 +91,7 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'easter-caker',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 15,
   },
   {
@@ -105,7 +105,7 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'easter-flipper',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 14,
   },
   {
@@ -119,7 +119,7 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'easter-storm',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 12,
   },
   {
@@ -137,7 +137,7 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'bullish',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 11,
   },
   {
@@ -151,7 +151,7 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'hiccup',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 10,
   },
   {
@@ -166,7 +166,7 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'sleepy',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 5,
   },
   {
@@ -181,12 +181,12 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'sunny',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 9,
   },
   {
     name: 'Churro',
-    description: "Don't let that dopey smile deceive you... Churro's a master CAKE chef!",
+    description: "Don't let that dopey smile deceive you... Churro's a master MCDAO chef!",
     images: {
       lg: 'churro-lg.png',
       md: 'churro-md.png',
@@ -196,12 +196,12 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'churro',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 8,
   },
   {
     name: 'Dollop',
-    description: "Nommm... Oh hi, I'm just meditating on the meaning of CAKE.",
+    description: "Nommm... Oh hi, I'm just meditating on the meaning of MCDAO.",
     images: {
       lg: 'dollop-lg.png',
       md: 'dollop-md.png',
@@ -211,12 +211,12 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'dollop',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 6,
   },
   {
     name: 'Twinkle',
-    description: "Three guesses what's put that twinkle in those eyes! (Hint: it's CAKE)",
+    description: "Three guesses what's put that twinkle in those eyes! (Hint: it's MCDAO)",
     images: {
       lg: 'twinkle-lg.png',
       md: 'twinkle-md.png',
@@ -226,7 +226,7 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'twinkle',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 7,
   },
   {
@@ -241,7 +241,7 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'swapsies',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 0,
   },
   {
@@ -256,7 +256,7 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'drizzle',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 1,
   },
   {
@@ -271,7 +271,7 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'blueberries',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 2,
   },
   {
@@ -286,7 +286,7 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'circular',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 3,
   },
   {
@@ -301,7 +301,7 @@ const Nfts: Nft[] = [
     },
     sortOrder: 999,
     identifier: 'sparkle',
-    type: NftType.PANCAKE,
+    type: NftType.PANMCDAO,
     variationId: 4,
   },
 ]
