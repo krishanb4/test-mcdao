@@ -6,6 +6,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     label: t('Home'),
     icon: 'HomeIcon',
     href: '/',
+    
   },
   {
     label: t('Trade'),
@@ -39,6 +40,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     label: t('Staking'),
     icon: 'PoolIcon',
     href: '/pools',
+    status: 
+      {
+        text: 'COMING SOON',
+        color: "warning",
+      },
   },
   // {
   //   label: t('Prediction (BETA)'),
