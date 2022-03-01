@@ -16,20 +16,20 @@ const farms: FarmConfig[] = [
     quoteToken: tokens.wbnb,
   },
   {
-    pid: 251,
+    pid: 1,
     lpSymbol: 'MCDAO-BNB LP',
     lpAddresses: {
-      97: '',
+      97: '0x4a01fEf0d2bDe0A44a117F6BABEC91972756650b',
       56: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
     },
     token: tokens.cake,
     quoteToken: tokens.wbnb,
   },
   {
-    pid: 252,
+    pid: 2,
     lpSymbol: 'MCDAO-BUSD LP',
     lpAddresses: {
-      97: '',
+      97: '0x527B5f9226817c52003D9707d73189D453665324',
       56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
     },
     token: tokens.busd,

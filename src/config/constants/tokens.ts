@@ -7,7 +7,7 @@ const tokens = {
     symbol: 'MCDAO',
     address: {
       56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
-      97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
+      97: '0x1e503F6C1ee44D6F3ed823c80CECc73EB01E8CdB',
     },
     decimals: 18,
     projectLink: 'https://pancakeswap.finance/',

@@ -75,6 +75,7 @@ export const fetchFarmUserDataAsync = createAsyncThunk<FarmUserDataResponse[], {
       }
     })
   },
+
 )
 
 export const farmsSlice = createSlice({

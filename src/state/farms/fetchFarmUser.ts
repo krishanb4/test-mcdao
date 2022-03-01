@@ -8,8 +8,11 @@ import { FarmConfig } from 'config/constants/types'
 export const fetchFarmUserAllowances = async (account: string, farmsToFetch: FarmConfig[]) => {
   const masterChefAddress = getMasterChefAddress()
 
+
   const calls = farmsToFetch.map((farm) => {
     const lpContractAddress = getAddress(farm.lpAddresses)
+    
+    
     return { address: lpContractAddress, name: 'allowance', params: [account, masterChefAddress] }
   })
 
@@ -17,7 +20,9 @@ export const fetchFarmUserAllowances = async (account: string, farmsToFetch: Far
   const parsedLpAllowances = rawLpAllowances.map((lpBalance) => {
     return new BigNumber(lpBalance).toJSON()
   })
+  
   return parsedLpAllowances
+
 }
 
 export const fetchFarmUserTokenBalances = async (account: string, farmsToFetch: FarmConfig[]) => {
