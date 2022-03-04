@@ -10,30 +10,30 @@ const farms: FarmConfig[] = [
     lpSymbol: 'MCDAO',
     lpAddresses: {
       97: '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
-      56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+      56: '0xc64768866DA76779405aeAAda1b6Ef7163c8e115',
     },
     token: tokens.syrup,
     quoteToken: tokens.wbnb,
   },
   {
-    pid: 1,
+    pid: 3,
     lpSymbol: 'MCDAO-BNB LP',
     lpAddresses: {
       97: '0x4a01fEf0d2bDe0A44a117F6BABEC91972756650b',
-      56: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
+      56: '0x5b23EE93AfA81A3D7E41A9D0cD77d23008bb7b6e',
     },
     token: tokens.cake,
     quoteToken: tokens.wbnb,
   },
   {
-    pid: 2,
+    pid: 4,
     lpSymbol: 'MCDAO-BUSD LP',
     lpAddresses: {
       97: '0x527B5f9226817c52003D9707d73189D453665324',
-      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+      56: '0x80932BF35d2dDa4f10031bfd4198587e2c0cA078',
     },
-    token: tokens.busd,
-    quoteToken: tokens.wbnb,
+    token: tokens.cake,
+    quoteToken: tokens.busd,
   },
   /**
    * V3 by order of release (some may be out of PID order due to multiplier boost)

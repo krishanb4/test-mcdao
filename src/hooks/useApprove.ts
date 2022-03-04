@@ -15,7 +15,8 @@ import useLastUpdated from './useLastUpdated'
 export const useApprove = (lpContract: Contract) => {
   const { account } = useWeb3React()
   const masterChefContract = useMasterchef()
-
+ 
+  
   const handleApprove = useCallback(async () => {
     try {
       const tx = await approve(lpContract, masterChefContract, account)
@@ -27,6 +28,7 @@ export const useApprove = (lpContract: Contract) => {
 
   return { onApprove: handleApprove }
 }
+
 
 // Approve a Pool
 export const useSousApprove = (lpContract: Contract, sousId, earningTokenSymbol) => {

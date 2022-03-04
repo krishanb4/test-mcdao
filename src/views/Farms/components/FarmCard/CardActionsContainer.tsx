@@ -33,6 +33,8 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, account, addLiquidi
   const { t } = useTranslation()
   const [requestedApproval, setRequestedApproval] = useState(false)
   const { pid, lpAddresses } = farm
+
+
   const {
     allowance: allowanceAsString = 0,
     tokenBalance: tokenBalanceAsString = 0,
@@ -44,12 +46,20 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, account, addLiquidi
   const stakedBalance = new BigNumber(stakedBalanceAsString)
   const earnings = new BigNumber(earningsAsString)
   const lpAddress = getAddress(lpAddresses)
+
+
   const lpName = farm.lpSymbol.toUpperCase()
+
+
   const isApproved = account && allowance && allowance.isGreaterThan(0)
+
+
   const web3 = useWeb3()
   const dispatch = useAppDispatch()
 
   const lpContract = getBep20Contract(lpAddress, web3)
+
+
 
   const { onApprove } = useApprove(lpContract)
 
@@ -63,6 +73,8 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, account, addLiquidi
       console.error(e)
     }
   }, [onApprove, dispatch, account, pid])
+
+  // const isApproved = true;
 
   const renderApprovalOrStakeButton = () => {
     return isApproved ? (

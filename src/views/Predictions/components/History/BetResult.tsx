@@ -32,6 +32,8 @@ const BetResult: React.FC<BetResultProps> = ({ bet, result }) => {
   const { account } = useWeb3React()
   const { isRefundable } = useIsRefundable(bet.round.epoch)
   const bnbBusdPrice = usePriceBnbBusd()
+
+
   const canClaim = useBetCanClaim(account, bet.round.id)
 
   // Winners get the payout, otherwise the claim what they put it if it was canceled

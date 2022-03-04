@@ -50,6 +50,8 @@ export const fetchPoolsPublicDataAsync = (currentBlock: number) => async (dispat
 
   const prices = getTokenPricesFromFarm(getState().farms.data)
 
+  
+
   const liveData = poolsConfig.map((pool) => {
     const blockLimit = blockLimits.find((entry) => entry.sousId === pool.sousId)
     const totalStaking = totalStakings.find((entry) => entry.sousId === pool.sousId)
@@ -69,6 +71,7 @@ export const fetchPoolsPublicDataAsync = (currentBlock: number) => async (dispat
           parseFloat(pool.tokenPerBlock),
         )
       : 0
+
 
     return {
       ...blockLimit,
@@ -167,6 +170,8 @@ export const PoolsSlice = createSlice({
       const livePoolsData: Pool[] = action.payload
       state.data = state.data.map((pool) => {
         const livePoolData = livePoolsData.find((entry) => entry.sousId === pool.sousId)
+        
+        
         return { ...pool, ...livePoolData }
       })
     },

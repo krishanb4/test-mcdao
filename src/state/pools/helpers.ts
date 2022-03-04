@@ -35,7 +35,10 @@ export const transformPool = (pool: Pool): Pool => {
 export const getTokenPricesFromFarm = (farms: Farm[]) => {
   return farms.reduce((prices, farm) => {
     const quoteTokenAddress = getAddress(farm.quoteToken.address).toLocaleLowerCase()
+    console.log(quoteTokenAddress);
+    
     const tokenAddress = getAddress(farm.token.address).toLocaleLowerCase()
+    console.log(tokenAddress);
     /* eslint-disable no-param-reassign */
     if (!prices[quoteTokenAddress]) {
       prices[quoteTokenAddress] = new BigNumber(farm.quoteToken.busdPrice).toNumber()

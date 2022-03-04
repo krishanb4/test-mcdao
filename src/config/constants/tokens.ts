@@ -6,8 +6,8 @@ const tokens = {
   cake: {
     symbol: 'MCDAO',
     address: {
-      56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
-      97: '0x1e503F6C1ee44D6F3ed823c80CECc73EB01E8CdB',
+      56: '0x432B9921F2CA42D33b4394a692bcCa21669f3e0d',
+      97: '',
     },
     decimals: 18,
     projectLink: 'https://pancakeswap.finance/',
@@ -582,8 +582,8 @@ const tokens = {
   syrup: {
     symbol: 'SYRUP',
     address: {
-      56: '0x009cF7bC57584b7998236eff51b98A168DceA9B0',
-      97: '0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9',
+      56: '0x56b81e9396C40BC3a313F53104AfB53Ce0eeEff6',
+      97: '',
     },
     decimals: 18,
     projectLink: 'https://pancakeswap.finance/',

@@ -42,12 +42,14 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({
   const { account } = useWeb3React()
   const [requestedApproval, setRequestedApproval] = useState(false)
   const { allowance, tokenBalance, stakedBalance } = useFarmUser(pid)
+
   const { onStake } = useStake(pid)
   const { onUnstake } = useUnstake(pid)
   const web3 = useWeb3()
   const location = useLocation()
 
   const isApproved = account && allowance && allowance.isGreaterThan(0)
+
 
   const lpAddress = lpAddresses[process.env.REACT_APP_CHAIN_ID]
   const liquidityUrlPathParts = getLiquidityUrlPathParts({
