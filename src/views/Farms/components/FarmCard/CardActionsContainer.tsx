@@ -51,8 +51,10 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, account, addLiquidi
   const lpName = farm.lpSymbol.toUpperCase()
 
 
-  const isApproved = account && allowance && allowance.isGreaterThan(0)
 
+
+  const isApproved = account && allowance && allowance.isGreaterThan(0)
+  // const isApproved = true
 
   const web3 = useWeb3()
   const dispatch = useAppDispatch()

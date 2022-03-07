@@ -582,7 +582,7 @@ const tokens = {
   syrup: {
     symbol: 'SYRUP',
     address: {
-      56: '0x56b81e9396C40BC3a313F53104AfB53Ce0eeEff6',
+      56: '0xd0aad4b0db7e884c9ea21baa52d51b87ccbbf85e',
       97: '',
     },
     decimals: 18,

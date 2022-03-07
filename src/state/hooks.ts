@@ -60,7 +60,7 @@ export const usePollCoreFarmData = () => {
   const web3 = getWeb3NoAccount()
 
   useEffect(() => {
-    dispatch(fetchFarmsPublicDataAsync([3, 4]))
+    dispatch(fetchFarmsPublicDataAsync([1, 2]))
   }, [dispatch, fastRefresh, web3])
 }
 
@@ -128,6 +128,7 @@ export const useBusdPriceFromToken = (tokenSymbol: string): BigNumber => {
 
 export const useLpTokenPrice = (symbol: string) => {
   const farm = useFarmFromLpSymbol(symbol)
+  
   const farmTokenPriceInUsd = useBusdPriceFromPid(farm.pid)
   let lpTokenPrice = BIG_ZERO
 
@@ -140,6 +141,8 @@ export const useLpTokenPrice = (symbol: string) => {
     const totalLpTokens = getBalanceAmount(new BigNumber(farm.lpTotalSupply))
     lpTokenPrice = overallValueOfAllTokensInFarm.div(totalLpTokens)
   }
+  
+  
 
   return lpTokenPrice
 }
@@ -327,13 +330,13 @@ export const useAchievements = () => {
 }
 
 export const usePriceBnbBusd = (): BigNumber => {
-  const bnbBusdFarm = useFarmFromPid(3)
+  const bnbBusdFarm = useFarmFromPid(1)
   
   return new BigNumber(bnbBusdFarm.quoteToken.busdPrice)
 }
 
 export const usePriceCakeBusd = (): BigNumber => {
-  const cakeBnbFarm = useFarmFromPid(4)
+  const cakeBnbFarm = useFarmFromPid(2)
   return new BigNumber(cakeBnbFarm.token.busdPrice)
 }
 

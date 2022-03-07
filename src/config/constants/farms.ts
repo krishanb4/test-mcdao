@@ -9,27 +9,27 @@ const farms: FarmConfig[] = [
     pid: 0,
     lpSymbol: 'MCDAO',
     lpAddresses: {
-      97: '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
-      56: '0xc64768866DA76779405aeAAda1b6Ef7163c8e115',
+      97: '',
+      56: '0x1F7b69dB33332535AA45255fd8F711141cEa3f3b',
     },
     token: tokens.syrup,
     quoteToken: tokens.wbnb,
   },
   {
-    pid: 3,
+    pid: 1,
     lpSymbol: 'MCDAO-BNB LP',
     lpAddresses: {
-      97: '0x4a01fEf0d2bDe0A44a117F6BABEC91972756650b',
+      97: '',
       56: '0x5b23EE93AfA81A3D7E41A9D0cD77d23008bb7b6e',
     },
     token: tokens.cake,
     quoteToken: tokens.wbnb,
   },
   {
-    pid: 4,
+    pid: 2,
     lpSymbol: 'MCDAO-BUSD LP',
     lpAddresses: {
-      97: '0x527B5f9226817c52003D9707d73189D453665324',
+      97: '',
       56: '0x80932BF35d2dDa4f10031bfd4198587e2c0cA078',
     },
     token: tokens.cake,
@@ -47,7 +47,7 @@ const farms: FarmConfig[] = [
   //   },
   //   token: tokens.qkc,
   //   quoteToken: tokens.busd,
-  // },
+  // }, 
   // {
   //   pid: 400,
   //   lpSymbol: 'KTN-BNB LP',
